@@ -99,7 +99,7 @@ digitalWrite (7,LOW);
   else{
   
     st = millis();
-    if( millis() - (st+1000) > 0 ){ taskS = true;}
+    if( millis() - (st+1000) > 1000 ){ taskS = true;}
   
     if (taskS) {digitalWrite(RED_L, HIGH);
     digitalWrite(YELLOW_L, LOW);
